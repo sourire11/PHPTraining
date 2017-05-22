@@ -1,0 +1,48 @@
+
+.parent{
+  border: 1px
+  padding: 20px;
+  text-align: center;
+  width: 1000px;
+}
+.inner{
+   display:inline-block;
+   padding:10px;
+   border: 1px
+}
+.tablecell{
+  border: 1px solid
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 500px;
+  height: 100%;
+  margin: 30px;
+}
+
+.txt {
+    display: inline-block;
+    text-align: left;
+  }
+
+.main {
+    width: 130%;
+    border: 1px
+}
+.main div   {
+    width: 80%;
+    border: 1px
+    margin: 0 auto;
+}
+.sample-box-12 {
+    border: 4px solid #82636b;
+    border-radius: 240px 15px 185px 14px / 14px 200px 15px 185px;
+    margin: 2em 0;
+    padding: 2em;
+
+    width:500px; height:700px;
+
+}
+
+input.example1 { width: 15%; }
+input.example2 { width: 8%; }
