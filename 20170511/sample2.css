@@ -1,0 +1,7 @@
+
+table, td, th{
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 150px;
+    border: 1px solid #000;
+}

@@ -44,5 +44,15 @@
 
 }
 
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #000;
+}
+td, th{
+border: 1px solid #000;
+table-layout: fixed;
+}
+
 input.example1 { width: 15%; }
 input.example2 { width: 8%; }
