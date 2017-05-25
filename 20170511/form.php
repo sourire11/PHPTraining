@@ -28,22 +28,23 @@ function checkText(txt_obj){
     }
 }
 // --></script>
-<div class="sample-box-12">
+
+            <div class="sample-box-12">
 <form onsubmit="return false;">
-姓　　　　　　　　<input type="text" name="shi" required class="example1"/></br>
+姓　　　　　　　　<input type="text" name="shi" required class="example1"  placeholder="山田"/></br>
 <p>
-名　　　　　　　　<input type="text" name="mei" required class="example1"/></br>
+名　　　　　　　　<input type="text" name="mei" required class="example1"　 placeholder="花子"/></br>
 <p>
 性別　　　　　　　<input type="radio" id="男" name="sex" value="男"><LABEL for="男">男</LABEL>
 　<input type="radio" id="女" name="sex" value="女"><LABEL for="女">女</LABEL>
 　<input type="radio" id="不明" name="sex" value="不明"><LABEL for="不明">不明</LABEL>
 <br/>
 <p>
-住所　　　　　　　<input type = "text" name ="add" required><br/>
+住所　　　　　　　<input type = "text" name ="add" required　 placeholder="東京都千代田区"><br/>
 <p>
-電話番号　　　　　<input name="txt0" onkeyup="checkText(this)"  required class="example2">-<input name="txt1" onkeyup="checkText(this)"  required class="example2">-<input name="txt2" onkeyup="checkText(this)" required class="example2"><br/>
+電話番号　　　　　<input name="txt0" onkeyup="checkText(this)"  required class="example2" placeholder="03">-<input name="txt1" onkeyup="checkText(this)"  required class="example2"  placeholder="1234">-<input name="txt2" onkeyup="checkText(this)" required class="example2" placeholder="5678"><br/>
 <p>
-メールアドレス　　<input type = "text" name ="mail1" required>＠<input type = "text" name ="mail2"  required><br/>
+メールアドレス　　<input type = "text" name ="mail1" required placeholder="abc">＠<input type = "text" name ="mail2"  required placeholder="yahoo.co.jp"><br/>
 <p>
 どこで知ったか　　<input type="checkbox" name ="why1" value="雑誌">雑誌
 <input type="checkbox" name = "why2" value="新聞" >新聞<br/>
@@ -56,7 +57,7 @@ function checkText(txt_obj){
 <option value="AB型">AB型</option>
 </select></form>
 <p>
-質問内容<br/><textarea name="exmple" cols="50" rows="10" required></textarea><br/>
+質問内容<br/><textarea name="exmple" cols="50" rows="10" required placeholder="こちらに入力してください"></textarea><br/>
 <p>
     <script>
 $(function () {

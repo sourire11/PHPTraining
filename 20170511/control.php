@@ -3,11 +3,12 @@
 <html lang = "ja">
 <head>
 <meta http-equiv="Content-Style-Type" content="text/css" charset = "UTF-8">
-
+<link rel="stylesheet" type="text/css" href="text3.css" />
 <h2>管理画面</h2>
+
+<h3>お問い合わせ一覧</h3>
 <body>
-    <link rel="stylesheet" type="text/css" href="sample2.css">
-    <table>
+    <table class ="tbl_05">
     　<tr>
     　　<th>No.</th>
     　　<th>氏名</th>
@@ -21,8 +22,8 @@
 <?php
 
     $file = "file.csv";
+
     if ( ( $handle = fopen ( $file, "r" ) ) !== FALSE ) {
-        echo "<table>\n";
         while ( ( $data = fgetcsv ( $handle, 1000, ",") ) !== FALSE ) {
             echo "\t<tr>\n";
             for ( $i = 0; $i < count( $data ); $i++ ) {
@@ -32,9 +33,13 @@
         }
         echo "</table>\n";
         fclose ( $handle );
+
     }
     ?>
-
+<ul class="links1">
+    <li><a href="http://localhost/PHPTraining/20170511/form.php">問い合わせ画面へ</a></li>
+</ul>
+</div>
 </head>
 
 </dody>

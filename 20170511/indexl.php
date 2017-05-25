@@ -4,6 +4,7 @@ session_start();
 mb_internal_encoding('UTF-8');
 header("Content-type: text/html; charset=UTF-8");
 
+$contents = @file_get_contents('counter.txt');
 $shi = htmlspecialchars($_POST["shi"], ENT_QUOTES, "UTF-8");
 $mei = htmlspecialchars($_POST["mei"], ENT_QUOTES, "UTF-8");
 $sex = htmlspecialchars($_POST["sex"], ENT_QUOTES, "UTF-8");
@@ -19,7 +20,8 @@ $example2 = htmlspecialchars($_POST["example2"], ENT_QUOTES, "UTF-8");
 $exmple = htmlspecialchars($_POST["exmple"], ENT_QUOTES, "UTF-8");
 
 
-$line = array($shi.$mei, $sex, $add, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1. "," .$why2, $example2, $exmple);
+$line = array($contents,$shi.$mei, $sex, $add, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1. "," .$why2, $example2, $exmple);
+
 
 $file_name = "file.csv" ;
 $fp = fopen($file_name, "a+");
@@ -39,10 +41,10 @@ fclose($fp);
       <div class="txt">
     <div class="tablecell">
     <div class="main">
+
 <h2>確認画面</h2>
-        <div class="sample-box-12">
 
-
+<div class="sample-box-12">
     姓　　　　　　　　<?php echo $shi; ?>　<p>
     名　　　　　　　　<?php echo $mei; ?>　<p>
     性別　　　　　　　<?php echo $sex; ?>  <p>
