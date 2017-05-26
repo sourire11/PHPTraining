@@ -4,12 +4,12 @@
 <head>
 <meta http-equiv="Content-Style-Type" content="text/css" charset = "UTF-8">
 <link rel="stylesheet" type="text/css" href="text3.css" />
-
+<div id="snow">
 <h2>管理画面</h2>
 
 
 <h3>お問い合わせ一覧</h3>
-<body>
+<body bgcolor="#ffb2d8">
 
     <table class ="tbl_05">
     　<tr>
@@ -22,7 +22,7 @@
     <th>どこで知ったか</th>
     <th>血液型</th>
     <th>質問内容</th></tr>
-    <div id="snow">
+
 <?php
 
     $file = "file.csv";
@@ -40,9 +40,7 @@
 
     }
     ?>
-<ul class="links1">
-    <li><a href="http://localhost/PHPTraining/20170511/form.php">問い合わせ画面へ</a></li>
-</ul>
+<p class="text"><a href="http://localhost/PHPTraining/20170511/form.php">問い合わせ画面へ</a></p>
 </div>
 </head>
 

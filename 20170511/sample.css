@@ -77,35 +77,34 @@ select {
     padding: 2em;
     width:500px; height:600px;*/
     ul, ol{
-      padding: 10;
+      padding: 0;
     }
 
     ul li {
       position: relative;
       list-style-type: none!important;/*ポチ消す*/
-      padding: 0.5em 0.5em 0.3em 5.5em ;
-      margin-bottom: 5px;
-      line-height: 1.5;
+      padding: 0.5em 3.5em ;
+      margin-bottom: 15px;
+      line-height: 1.8;
       background: #ffc6e2;
       vertical-align: middle;
       color: #505050;
-      border-radius: 15px 10px 0px 15px;/*左側の角丸く*/
+      border-radius: 15px 0px 0px 10px;/*左側の角丸く*/
     }
 
     ul li:before{ /*疑似要素*/
       display:inline-block;
       vertical-align: middle;
       /*以下白丸つくる*/
-      margin-right: auto;
       content:'';
-      width:1em ;
+      width:1em;
       height: 1em;
       background: #fff;
       border-radius: 100%;
       margin-right: 5px;
     }
     input.textarea {
-    width: 200px;
+    width: 300px;
     height: 100px;
     text-align: center;
 }
@@ -143,7 +142,7 @@ h2:after{
     width: 12px;
 }
 
-input.example1 { width: 30%; }
+input.example1 { width: 27%; }
 input.example2 { width: 8%; }
 
 .square_btn{

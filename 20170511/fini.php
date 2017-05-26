@@ -41,8 +41,8 @@ function set_count( $file_name = "counter.txt"){
 ?>
 <p>お問い合わせ番号: <?php echo set_count(); ?></p>
 <div id="table_disp"></div>
-
-<a href="http://localhost/PHPTraining/20170511/control.php">管理画面へ</a>
+<link rel="stylesheet" type="text/css" href="text3.css">
+<p class="text"><a href="http://localhost/PHPTraining/20170511/control.php">管理画面へ</a></p>
 </head>
 <body>
 </dody>

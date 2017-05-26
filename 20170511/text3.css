@@ -11,7 +11,7 @@ EDIT ON
     top: 0;
     width: 100%;
     z-index:1;
-    -webkit-animation: snow 11s linear infinite;
+    -webkit-animation: snow 15s linear infinite;
     -moz-animation: snow 10s linear infinite;
     -ms-animation: snow 12s linear infinite;
     animation: snow 10s linear infinite;
@@ -51,7 +51,7 @@ padding: 1em;
 }
 	tbl_05 {
 	width: 99%;
-	margin: 5px 8px 5px;
+	margin: 5px 8px 5px 30px;
 	border: 2px solid #e3e3e3;
 	border-collapse: collapse;
 	-ms-user-select: none;
@@ -118,4 +118,76 @@ table.tbl_05 tr:hover {
     width: 50px;
     height: 40px;
     transform: rotate( -10deg );
+}
+
+/* 07.リボン型の見出し（切りっぱなし） */
+.links2 {
+	position:relative;
+	padding:10px;
+	background:#88ccef;
+	box-shadow:
+		10px 0 0 0 #88ccef,
+		-10px 0 0 0 #88ccef,
+		0 3px 3px 0 rgba(0,0,0,0.1);
+}
+.links2:before{
+	content:" ";
+	position:absolute;
+	top:100%;
+	left:-10px;
+	width:0;
+	height:0;
+	border-width:0 10px 10px 0;
+	border-style:solid;
+	border-color:transparent;
+	border-right-color:#7bb8d8;
+}
+.links:after{
+	content:" ";
+	position:absolute;
+	top:0px;
+	left:100%;
+	width:0;
+	height:0;
+	border-width:20px 10px;
+	border-style:solid;
+	border-color:#88ccef;
+	border-right-color:transparent;
+}
+
+a{
+		text-decoration: none;
+}
+.text{
+
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+}
+
+.text:before,
+.text:after{
+
+  position: absolute;
+  top: 1.3em;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background:
+      linear-gradient(to right,dodgerblue, crimson, yellowgreen, orange, purple, red);
+  transition: 2s;
+}
+
+.text:before{
+  left: 50%;
+}
+
+.text:after{
+  right: 50%;
+}
+
+.text:hover:before,
+.text:hover:after{
+  width: 50%;
 }
