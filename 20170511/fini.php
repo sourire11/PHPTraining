@@ -10,7 +10,7 @@
   <div class="txt">
 <div class="tablecell">
 <div class="main">
-
+<div class="box15">
 <h2>完了画面</h2>
 <div class="sample-box-12">
 

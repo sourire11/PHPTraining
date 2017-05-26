@@ -1,0 +1,17 @@
+#sample {
+width:50%;
+height:50%;
+border-left:1px solid #ff0000;
+border-right:1px solid #0000ff;
+}
+
+#sample:before,
+#sample:after {
+content:"";
+display:block;
+height:1px;
+width:50%;
+	background:-webkit-gradient(linear, left top, right bottom, from(#f00), to(#00f));
+	background:-moz-linear-gradient(left, #f00, #00f);
+	background:linear-gradient(left, #f00, #00f);
+}

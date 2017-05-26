@@ -41,7 +41,7 @@ fclose($fp);
       <div class="txt">
     <div class="tablecell">
     <div class="main">
-
+<div class="box15">
 <h2>確認画面</h2>
 
 <div class="sample-box-12">
@@ -55,8 +55,9 @@ fclose($fp);
     血液型　　　　　　<?php echo $example2; ?>　<p>
     質問内容　　　　　<?php echo $exmple; ?>　<p>
     <form method="POST" action="fini.php">
-            <input type="button" value="戻る" onclick="history.back(-1)">
-        <button type="submit" name="submit">送信</button>
+
+            <input type="button" value="戻る" onclick="history.back(-1)" class="square_btn">
+        <button type="submit" name="submit" class="square_btn">送信</button>
     </form>
 </div>
 </body>

@@ -1,8 +1,39 @@
-div  {
+
+.box15 {
+    width: 80px;
+    padding: 1.2em 1.5em;
+    margin: 12px 20px;
+    color: #565656;
+    background: #ffeaea;
+    box-shadow: 0px 0px 0px 10px #ffeaea;
+    border: dashed 2px #ffc6e2;
+    border-radius: 8px;
+
+}
+.box15 p {
+    margin: 10;
+    padding: 10;
+}
+
+    div  {
      margin : 15px ;
      padding : 20px ;
 }
 
+
+/*input[type="radio"] {
+    width:15px;
+    height:15px;
+    color: #ccc;
+    background-color: #f6f7f8;
+}
+input[type="checkbox"] {
+    width:15px;
+    height:15px;
+}
+select {
+    height:25px;
+}*/
 .parent{
   border: 1px
   padding: 20px;
@@ -38,16 +69,48 @@ div  {
     border: 1px
     margin: 0 auto;
 }
-
+/*
 .sample-box-12 {
     border: 4px solid #82636b;
     border-radius: 140px 15px 185px 14px / 14px 210px 15px 185px;
     margin: 2em 0;
     padding: 2em;
+    width:500px; height:600px;*/
+    ul, ol{
+      padding: 10;
+    }
 
-    width:500px; height:600px;
+    ul li {
+      position: relative;
+      list-style-type: none!important;/*ポチ消す*/
+      padding: 0.5em 0.5em 0.3em 5.5em ;
+      margin-bottom: 5px;
+      line-height: 1.5;
+      background: #ffc6e2;
+      vertical-align: middle;
+      color: #505050;
+      border-radius: 15px 10px 0px 15px;/*左側の角丸く*/
+    }
 
+    ul li:before{ /*疑似要素*/
+      display:inline-block;
+      vertical-align: middle;
+      /*以下白丸つくる*/
+      margin-right: auto;
+      content:'';
+      width:1em ;
+      height: 1em;
+      background: #fff;
+      border-radius: 100%;
+      margin-right: 5px;
+    }
+    input.textarea {
+    width: 200px;
+    height: 100px;
+    text-align: center;
 }
+
+note { color: red; } /* ※のスタイル */
 
 h2{
     position: relative;
@@ -80,5 +143,22 @@ h2:after{
     width: 12px;
 }
 
-input.example1 { width: 15%; }
+input.example1 { width: 30%; }
 input.example2 { width: 8%; }
+
+.square_btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: brack;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(50deg, #e4007f 0%, #ffe0ff 100%);
+    background-image: linear-gradient(50deg, #e4007f 0%, #ffe0ff 100%);
+    transition: .4s;
+}
+
+.square_btn:hover{
+    background-image: -webkit-linear-gradient(50deg, #e4007f 50%, #ffe0ff 100%);
+    background-image: linear-gradient(50deg, #e4007f 50%, #ffe0ff 100%);
+}

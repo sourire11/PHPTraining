@@ -4,10 +4,13 @@
 <head>
 <meta http-equiv="Content-Style-Type" content="text/css" charset = "UTF-8">
 <link rel="stylesheet" type="text/css" href="text3.css" />
+
 <h2>管理画面</h2>
+
 
 <h3>お問い合わせ一覧</h3>
 <body>
+
     <table class ="tbl_05">
     　<tr>
     　　<th>No.</th>
@@ -19,6 +22,7 @@
     <th>どこで知ったか</th>
     <th>血液型</th>
     <th>質問内容</th></tr>
+    <div id="snow">
 <?php
 
     $file = "file.csv";
