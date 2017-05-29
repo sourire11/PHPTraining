@@ -1,3 +1,7 @@
+.main {
+    width: 100%;
+    border: 1px solid #000;
+}
 
 .box15 {
     width: 80px;

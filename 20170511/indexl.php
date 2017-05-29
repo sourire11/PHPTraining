@@ -4,11 +4,13 @@ session_start();
 mb_internal_encoding('UTF-8');
 header("Content-type: text/html; charset=UTF-8");
 
+$date = date('Y年m月d日');
 $contents = @file_get_contents('counter.txt');
 $shi = htmlspecialchars($_POST["shi"], ENT_QUOTES, "UTF-8");
 $mei = htmlspecialchars($_POST["mei"], ENT_QUOTES, "UTF-8");
 $sex = htmlspecialchars($_POST["sex"], ENT_QUOTES, "UTF-8");
-$add = htmlspecialchars($_POST["add"], ENT_QUOTES, "UTF-8");
+$zip = htmlspecialchars($_POST["zip"], ENT_QUOTES, "UTF-8");
+$address = htmlspecialchars($_POST["address"], ENT_QUOTES, "UTF-8");
 $txt0 = htmlspecialchars($_POST["txt0"], ENT_QUOTES, "UTF-8");
 $txt1 = htmlspecialchars($_POST["txt1"], ENT_QUOTES, "UTF-8");
 $txt2 = htmlspecialchars($_POST["txt2"], ENT_QUOTES, "UTF-8");
@@ -20,7 +22,7 @@ $example2 = htmlspecialchars($_POST["example2"], ENT_QUOTES, "UTF-8");
 $exmple = htmlspecialchars($_POST["exmple"], ENT_QUOTES, "UTF-8");
 
 
-$line = array($contents,$shi.$mei, $sex, $add, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1. "," .$why2, $example2, $exmple);
+$line = array($date, $contents, $shi.$mei, $sex, $zip, $address, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1.$why2, $example2, $exmple);
 
 
 $file_name = "file.csv" ;
@@ -45,13 +47,14 @@ fclose($fp);
 <h2>確認画面</h2>
 
 <div class="sample-box-12">
-    姓　　　　　　　　<?php echo $shi; ?>　<p>
+    　姓　　　　　　　　<?php echo $shi; ?>　<p>
     名　　　　　　　　<?php echo $mei; ?>　<p>
     性別　　　　　　　<?php echo $sex; ?>  <p>
-    住所　　　　　　　<?php echo $add; ?>　<p>
+    郵便番号         　　　　<?php echo $zip; ?> <p>
+    住所　　　　　　　<?php echo $address; ?>　<p>
     電話番号　　　　　<?php echo $txt0. "-" .$txt1. "-" .$txt2; ?>　<p>
     メールアドレス　　<?php echo $mail1. "@" .$mail2; ?>　<p>
-    どこで知ったか　　<?php echo $why1. " , " .$why2; ?>　<p>
+    どこで知ったか　　<?php echo $why1. $why2; ?>　<p>
     血液型　　　　　　<?php echo $example2; ?>　<p>
     質問内容　　　　　<?php echo $exmple; ?>　<p>
     <form method="POST" action="fini.php">

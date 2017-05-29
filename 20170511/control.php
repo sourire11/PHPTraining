@@ -5,6 +5,8 @@
 <meta http-equiv="Content-Style-Type" content="text/css" charset = "UTF-8">
 <link rel="stylesheet" type="text/css" href="text3.css" />
 <div id="snow">
+    <div id=.rabbit>
+    <div id=.clouds>
 <h2>管理画面</h2>
 
 
@@ -13,9 +15,11 @@
 
     <table class ="tbl_05">
     　<tr>
+        <th>日付</th>
     　　<th>No.</th>
     　　<th>氏名</th>
     <th>性別</th>
+    <th>郵便番号</th>
     <th>住所</th>
     <th>電話番号</th>
     <th>メールアドレス</th>
@@ -40,6 +44,8 @@
 
     }
     ?>
+
+
 <p class="text"><a href="http://localhost/PHPTraining/20170511/form.php">問い合わせ画面へ</a></p>
 </div>
 </head>
