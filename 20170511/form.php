@@ -14,7 +14,7 @@
     <div class="tablecell">
 
         <div class="box15">
-    <h2>お問い合わせ</h2>
+    <h2>お問い合わせフォーム</h2>
     <span style="color:red">*</span>は必ず入力してください。</br>
     <!-- データ入力フォーム -->
 <form method="POST" action="indexl.php">
@@ -51,17 +51,22 @@ function checkText(txt_obj){
 <p>
 <li> 電話番号 <span style="color:red">*</span>　　　　<input name="txt0" onkeyup="checkText(this)"  required class="example2" placeholder="03">-<input name="txt1" onkeyup="checkText(this)"  required class="example2"  placeholder="1234">-<input name="txt2" onkeyup="checkText(this)" required class="example2" placeholder="5678"></li>
 <p>
-<li> メールアドレス <span style="color:red">*</span>　<input type = "text" name ="mail1" required class="example1" placeholder="例）abc" >＠<input type = "text" name ="mail2"  required class="example1"placeholder="yahoo.co.jp"></li>
+<li> メールアドレス <span style="color:red">*</span>　<input type = "text" name ="mail1" required class="example1" placeholder="例）abc" >＠<select name="mail2" equired class="example1">
+                             <option value="yahoo.co.jp">yahoo.co.jp</option>
+                             <option value="gmail.com">gmail.com</option>
+                             <option value="softbank.ne.jp">softbank.ne.jp</option>
+                             <option value="docomo.ne.jp">docomo.ne.jp</option>
+                             <option value="ezweb.ne.jp">ezweb.ne.jp</option>
+    </select></li>
 <p>
 <li> どこで知ったか　　<LABEL><input type="hidden" name="why1" value="　"><input type="checkbox" name ="why1" value="雑誌">雑誌</LABEL><LABEL><input type="hidden" name="why2" value="　"><input type="checkbox" name = "why2" value="新聞" >新聞</LABEL></li>
 <p>
-<li> 血液型　　　　　  <form>
-                         <select name="category">
-                         <option value="A型">A型</option>
-                         <option value="B型">B型</option>
-                         <option value="O型">O型</option>
-                         <option value="AB型">AB型</option>
-</select></form></li>
+<li> 質問カテゴリ　　　<select name="category">
+                         <option value="１について">１について</option>
+                         <option value="２について">２について</option>
+                         <option value="３について">３について</option>
+                         <option value="４について">４について</option>
+</select></li>
 <li>  質問内容　　　　　<textarea name="exmple" cols="40" rows="10" maxlength="35" class="input"  placeholder="こちらに入力してください"></textarea></li>
 <p></ul>
     <script>
@@ -72,9 +77,23 @@ $(function () {
   })
 });
 </script>
+<style type="text/css">
+.center {
+  text-align: center;
+}
+.center * {
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 25px;
+}
+</style>
+
+<div class="center">
+
+<div style="text-align:center;">
     <input type="submit" value="確認" class="square_btn">
 <input type="reset" value="リセット" class="square_btn"> </div>
- </div>
+ </div></div>
 </p>
 </div>
 </form>

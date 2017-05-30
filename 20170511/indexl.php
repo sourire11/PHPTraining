@@ -18,7 +18,7 @@ $mail1 = htmlspecialchars($_POST["mail1"], ENT_QUOTES, "UTF-8");
 $mail2 = htmlspecialchars($_POST["mail2"], ENT_QUOTES, "UTF-8");
 $why1 = htmlspecialchars($_POST["why1"], ENT_QUOTES, "UTF-8");
 $why2 = htmlspecialchars($_POST["why2"], ENT_QUOTES, "UTF-8");
-$category= htmlspecialchars($_POST["category"], ENT_QUOTES, "UTF-8");
+$category = htmlspecialchars($_POST["category"], ENT_QUOTES, "UTF-8");
 $exmple = htmlspecialchars($_POST["exmple"], ENT_QUOTES, "UTF-8");
 
 
@@ -38,30 +38,50 @@ fclose($fp);
 <title>確認画面</title>
 </head>
 <body>
+
+
+
+    <div class="main">
     <div class="parent">
   <div class="inner">
       <div class="txt">
     <div class="tablecell">
-    <div class="main">
-<div class="box15">
-<h2>確認画面</h2>
 
+        <div class="box15">
+<h2>お問い合わせ内容をご確認ください</h2>
+<p>
+以下の内容で宜しければ<span style="color:red">[送信]</span>ボタンを押してください。<br>
 <div class="sample-box-12">
-    　姓　　　　　　　　<?php echo $shi; ?>　<p>
-    名　　　　　　　　<?php echo $mei; ?>　<p>
-    性別　　　　　　　<?php echo $sex; ?>  <p>
-    郵便番号         　　　　<?php echo $zip; ?> <p>
-    住所　　　　　　　<?php echo $address; ?>　<p>
-    電話番号　　　　　<?php echo $txt0. "-" .$txt1. "-" .$txt2; ?>　<p>
-    メールアドレス　　<?php echo $mail1. "@" .$mail2; ?>　<p>
-    どこで知ったか　　<?php echo $why1. $why2; ?>　<p>
-    血液型　　　　　　<?php echo $category; ?>　<p>
-    質問内容　　　　　<?php echo $exmple; ?>　<p>
+    <ul>
+<li>姓　　　　　　　<?php echo $shi; ?> </li>
+<li>名　　　　　　　<?php echo $mei; ?>　</li>
+<li>性別　　　　　　<?php echo $sex; ?>  </li>
+<li>郵便番号　　　　<?php echo $zip; ?> </li>
+<li>住所　　　　　　<?php echo $address; ?>　</li>
+<li>電話番号　　　　<?php echo $txt0. "-" .$txt1. "-" .$txt2; ?>　</li>
+<li>メールアドレス　<?php echo $mail1. "@" .$mail2; ?>　</li>
+<li>どこで知ったか　<?php echo $why1. $why2; ?>　</li>
+<li>質問カテゴリ　　<?php echo $category; ?>　</li>
+<li>質問内容　　　　<?php echo $exmple; ?>　</li>
+</ul>
     <form method="POST" action="fini.php">
 
+    <style type="text/css">
+    .center {
+      text-align: center;
+    }
+    .center * {
+      margin: 0 auto;
+      width: 150px;
+      border-radius: 25px;
+    }
+    </style>
+
+    <div class="center">
+<div style="text-align:center;">
             <input type="button" value="戻る" onclick="history.back(-1)" class="square_btn">
         <button type="submit" name="submit" class="square_btn">送信</button>
     </form>
-</div>
+</div></div>
 </body>
 </html>

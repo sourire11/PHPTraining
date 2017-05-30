@@ -6,7 +6,7 @@
 .box15 {
     width: 80px;
     padding: 1.2em 1.5em;
-    margin: 12px 20px;
+    margin: 10px 20px;
     color: #565656;
     background: #ffeaea;
     box-shadow: 0px 0px 0px 10px #ffeaea;
@@ -149,16 +149,25 @@ h2:after{
 input.example1 { width: 27%; }
 input.example2 { width: 8%; }
 
+#sample {  text-align: center; }
+.button_wrapper{
+   text-align:center;
+}
+button{
+  display:block;
+  margin: 0 auto;
+}
 .square_btn{
     display: inline-block;
     padding: 0.5em 1em;
     color: brack;
-    border-radius: 3px;
+    border-radius: 25px;
     font-weight: bold;
     color: #FFF;
     background-image: -webkit-linear-gradient(50deg, #e4007f 0%, #ffe0ff 100%);
     background-image: linear-gradient(50deg, #e4007f 0%, #ffe0ff 100%);
     transition: .4s;
+     text-align:center;
 }
 
 .square_btn:hover{

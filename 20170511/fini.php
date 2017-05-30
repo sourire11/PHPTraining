@@ -12,6 +12,8 @@
 <div class="main">
 <div class="box15">
 <h2>完了画面</h2>
+お問い合わせありがとうございます。<br>
+完了しました。<br>
 <div class="sample-box-12">
 
 <?php
