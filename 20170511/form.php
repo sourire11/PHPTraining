@@ -56,19 +56,19 @@ function checkText(txt_obj){
 <li> どこで知ったか　　<LABEL><input type="hidden" name="why1" value="　"><input type="checkbox" name ="why1" value="雑誌">雑誌</LABEL><LABEL><input type="hidden" name="why2" value="　"><input type="checkbox" name = "why2" value="新聞" >新聞</LABEL></li>
 <p>
 <li> 血液型　　　　　  <form>
-                         <select name="example2">
+                         <select name="category">
                          <option value="A型">A型</option>
                          <option value="B型">B型</option>
                          <option value="O型">O型</option>
-                         <option value="AB型">AB型</option></li>
-</select></form>
+                         <option value="AB型">AB型</option>
+</select></form></li>
 <li>  質問内容　　　　　<textarea name="exmple" cols="40" rows="10" maxlength="35" class="input"  placeholder="こちらに入力してください"></textarea></li>
 <p></ul>
     <script>
 $(function () {
   $('#btn').click(function() {
-    var id = $('[name="sex"]:checked').attr('id');
-    console.log($('label[for="' + id + '"]').text());  // 結果：O型
+    var id = $('[name="blood"]:checked').attr('id');
+    console.log($('label[for="' + id + '"]').text());
   })
 });
 </script>

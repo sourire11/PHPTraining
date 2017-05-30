@@ -18,11 +18,11 @@ $mail1 = htmlspecialchars($_POST["mail1"], ENT_QUOTES, "UTF-8");
 $mail2 = htmlspecialchars($_POST["mail2"], ENT_QUOTES, "UTF-8");
 $why1 = htmlspecialchars($_POST["why1"], ENT_QUOTES, "UTF-8");
 $why2 = htmlspecialchars($_POST["why2"], ENT_QUOTES, "UTF-8");
-$example2 = htmlspecialchars($_POST["example2"], ENT_QUOTES, "UTF-8");
+$category= htmlspecialchars($_POST["category"], ENT_QUOTES, "UTF-8");
 $exmple = htmlspecialchars($_POST["exmple"], ENT_QUOTES, "UTF-8");
 
 
-$line = array($date, $contents, $shi.$mei, $sex, $zip, $address, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1.$why2, $example2, $exmple);
+$line = array($date, $contents, $shi.$mei, $sex, $zip, $address, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1.$why2, $category, $exmple);
 
 
 $file_name = "file.csv" ;
@@ -55,7 +55,7 @@ fclose($fp);
     電話番号　　　　　<?php echo $txt0. "-" .$txt1. "-" .$txt2; ?>　<p>
     メールアドレス　　<?php echo $mail1. "@" .$mail2; ?>　<p>
     どこで知ったか　　<?php echo $why1. $why2; ?>　<p>
-    血液型　　　　　　<?php echo $example2; ?>　<p>
+    血液型　　　　　　<?php echo $category; ?>　<p>
     質問内容　　　　　<?php echo $exmple; ?>　<p>
     <form method="POST" action="fini.php">
 

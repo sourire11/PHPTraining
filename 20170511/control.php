@@ -5,8 +5,7 @@
 <meta http-equiv="Content-Style-Type" content="text/css" charset = "UTF-8">
 <link rel="stylesheet" type="text/css" href="text3.css" />
 <div id="snow">
-    <div id=.rabbit>
-    <div id=.clouds>
+
 <h2>管理画面</h2>
 
 

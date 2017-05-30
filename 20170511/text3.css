@@ -195,10 +195,11 @@ a{
 @import "compass/css3";
 
 body {
-  background:#e2b29f;
+  background:#ffdbed;
   font-size:120%;
 }
 
+/*
 .rabbit {
   width:5em;
   height:3em;
@@ -279,7 +280,7 @@ body {
   }
 }
 
-
+/*
 @keyframes hop {
   20% {
     @include transform(rotate(-10deg) translate(1em,-2em));
