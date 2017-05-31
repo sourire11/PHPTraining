@@ -49,8 +49,7 @@ margin: 1em 0;
 padding: 1em;
 
 }
-	tbl_05 {
-	width: 99%;
+tbl_05 {
 	margin: 5px 8px 5px 30px;
 	border: 2px solid #e3e3e3;
 	border-collapse: collapse;
@@ -58,10 +57,10 @@ padding: 1em;
     -webkit-user-select: none;
     user-select: none;
     cursor: default;
+
 }
 
 .tbl_05 th {
-	width: 5%;
 	text-align: center;
 	padding: 8px 5px 5px 2px;
 	border: 1px solid #e3e3e3;
@@ -69,37 +68,60 @@ padding: 1em;
 	vertical-align: middle;
 	background-color: #ffefff;
     border-collapse: collapse;
-    table-layout: fixed;
 
 }
 
 .tbl_05 td{
-	width: 5%;
 	text-align: center;
 	padding: 8px 5px 5px 2px;
 	border: 1px solid #e3e3e3;
 	font-weight: normal;
 	vertical-align: middle;
     border-collapse: collapse;
-    table-layout: fixed;
 }
-/*
-.tbl_05 td {
-	vertical-align: middle;
-	padding: 5px 5px 5px 5px;
-	border: 1px solid #e3e3e3;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-*/
 
 table.tbl_05 tr:hover {
 	background: #ffebf5;
-	font-weight: bold;
-	  border-collapse: collapse;
+	/*font-weight: bold;
+	  border-collapse: collapse;*/
 }
 
+#date {
+    width: 8%;
+}
 
+#no {
+    width: 3%;
+}
+
+#name {
+    width: 11%;
+}
+#sex {
+    width: 4%;
+}
+#zip {
+    width: 6%;
+}
+#add {
+    width: 16%;
+}
+
+#tel{
+    width: 9%;
+}
+#mail {
+    width: 14%;
+}
+#why {
+    width: 6%;
+}
+#cate {
+    width: 7%;
+}
+#qa {
+    width: ;
+}
 .links1 {
 	text-align: center;
 	background-color: #fdeff2;

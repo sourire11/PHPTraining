@@ -12,19 +12,19 @@
 <h3>お問い合わせ一覧</h3>
 <body bgcolor="#ffb2d8">
 
-    <table class ="tbl_05">
+    <table class="tbl_05">
     　<tr>
-        <th>日付</th>
-    　　<th>No.</th>
-    　　<th>氏名</th>
-    <th>性別</th>
-    <th>郵便番号</th>
-    <th>住所</th>
-    <th>電話番号</th>
-    <th>メールアドレス</th>
-    <th>どこで知ったか</th>
-    <th>血液型</th>
-    <th>質問内容</th></tr>
+        <th id="date">日付</th>
+    　　<th id="no">No.</th>
+    　　<th id="name">氏名</th>
+    <th id="sex">性別</th>
+    <th id="zip">郵便番号</th>
+    <th id="add">住所</th>
+    <th id="tel">電話番号</th>
+    <th id="mail">メールアドレス</th>
+    <th id="why">どこで知ったか</th>
+    <th id="cate">質問カテゴリ</th>
+    <th id="qa">質問内容</th></tr>
 
 <?php
 

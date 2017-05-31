@@ -4,7 +4,7 @@ session_start();
 mb_internal_encoding('UTF-8');
 header("Content-type: text/html; charset=UTF-8");
 
-$date = date('Y年m月d日');
+$date = date('Y/m/d');
 $contents = @file_get_contents('counter.txt');
 $shi = htmlspecialchars($_POST["shi"], ENT_QUOTES, "UTF-8");
 $mei = htmlspecialchars($_POST["mei"], ENT_QUOTES, "UTF-8");
@@ -22,7 +22,7 @@ $category = htmlspecialchars($_POST["category"], ENT_QUOTES, "UTF-8");
 $exmple = htmlspecialchars($_POST["exmple"], ENT_QUOTES, "UTF-8");
 
 
-$line = array($date, $contents, $shi.$mei, $sex, $zip, $address, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1.$why2, $category, $exmple);
+$line = array($date, $contents, $shi." ".$mei, $sex, $zip, $address, $txt0. "-" .$txt1. "-" .$txt2, $mail1. "@" .$mail2, $why1.$why2, $category, $exmple);
 
 
 $file_name = "file.csv" ;
